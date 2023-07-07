@@ -34,16 +34,14 @@ export default function SectionTwo() {
         <div className="exp upwork">
           <img src={upwork} />
           <div className="exp-title">
-            <h1>Tashkent University of Information Technology</h1>
-            <h2>Software Engineering</h2>
+            <h1>Upwork</h1>
             <h3>June 2023 ...</h3>
           </div>
         </div>
         <div className="exp kwork">
           <img src={kwork} />
           <div className="exp-title">
-            <h1>Tashkent University of Information Technology</h1>
-            <h2>Software Engineering</h2>
+            <h1>Kwork</h1>
             <h3>June 2023 ...</h3>
           </div>
         </div>
