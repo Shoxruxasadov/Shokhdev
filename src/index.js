@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
+import "rodal/lib/rodal.css";
+import "./styles/style.scss";
+import "./styles/style.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { I18nextProvider } from "react-i18next";
+import i18next from "i18next";
+import global_en from "./translations/en/global.json";
+import global_ru from "./translations/ru/global.json";
+import global_uz from "./translations/uz/global.json";
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  lng: "en",
+  resources: {
+    en: {
+      global: global_en,
+    },
+    ru: {
+      global: global_ru,
+    },
+    uz: {
+      global: global_uz,
+    },
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <I18nextProvider i18n={i18next}>
+      <RouterProvider router={router} />
+    </I18nextProvider>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

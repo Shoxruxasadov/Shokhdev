@@ -1,0 +1,25 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "project": "Projects",
+    "contact": "Contact"
+  },
+  "section-one": {
+    "frontend": "Frontend",
+    "developer": "Developer",
+    "react": "React",
+    "redux": "Redux",
+    "toContact": "Get in Touch",
+    "available": "Available for Hire"
+  },
+  "section-two": {
+    "hello": "Hello! I'm",
+    "name": "Shoxrux Asadov",
+    "job": "Frontend Developer",
+    "city": "from Uzbekistan",
+    "skill": "Basic Skills",
+    "subtitle": "With my passion for frontend development and strong technical skills, I am ready to contribute to innovative projects and deliver great software."
+  }
+}
