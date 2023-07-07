@@ -25,7 +25,7 @@ export default function SectionTwo() {
           <div className="edu-title">
             <h1>Shift Academy</h1>
             <h2>Full Stack Developer </h2>
-            <h3>December 2022 - December 2023</h3>
+            <h3>December 2022 - June 2023</h3>
           </div>
         </div>
       </div>
