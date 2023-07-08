@@ -6,9 +6,10 @@ import {
   BiLogoGithub,
   BiSolidCloudDownload,
 } from "react-icons/bi";
-
 import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { IoMdMailUnread } from "react-icons/io";
+
+import Resume from "../../others/resume.pdf"
 
 export default function Footer() {
   return (
@@ -58,17 +59,16 @@ export default function Footer() {
             >
               <BiLogoLinkedin /> <span>LinkedIn</span>
             </Link>
-            <Link
+            <a
               className="social resume"
-              to={"./resume.pdf"}
-              download="Resume"
-              target="_blank"
+              href={Resume}
+              download="resume"
             >
               <BiSolidCloudDownload /> <span>Resume</span>
-            </Link>
+            </a>
           </div>
           <div className="ooo">
-            <p>Shoxrux Asadov © 2022-2024.</p>
+            <p>Shoxrux Asadov © 2022-2023.</p>
           </div>
         </div>
       </div>

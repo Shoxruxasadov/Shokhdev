@@ -3,6 +3,7 @@ import Ellipse1 from "../../images/SectionOne/Ellipse1.png";
 import Ellipse2 from "../../images/SectionOne/Ellipse2.png";
 import Ellipse3 from "../../images/SectionOne/Ellipse3.png";
 import Shokhdev from "../../images/SectionOne/Shokhdev.webp";
+import { Link } from "react-scroll";
 
 export default function SectionOne() {
   const [t, i18n] = useTranslation("global");
@@ -12,13 +13,20 @@ export default function SectionOne() {
         <h1>
           {t("section-one.frontend")} <br /> <span>&</span>{" "}
           {t("section-one.developer")} <br />
-          {t("section-one.react")} <span>&</span>{" "}
-          {t("section-one.redux")}
+          {t("section-one.react")} <span>&</span> {t("section-one.redux")}
         </h1>
         <div>
-          <button className="toContact">
-            {t("section-one.toContact")}
-          </button>
+          <Link
+            className="toContact"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <span>{t("section-one.toContact")}</span>
+          </Link>
           <div className="dot">
             <img src={Ellipse1} />
             <img src={Ellipse2} />
