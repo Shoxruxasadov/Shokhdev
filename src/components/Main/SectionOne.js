@@ -7,7 +7,7 @@ import Shokhdev from "../../images/SectionOne/Shokhdev.webp";
 export default function SectionOne() {
   const [t, i18n] = useTranslation("global");
   return (
-    <section className="section section-one">
+    <section id="home" className="section section-one">
       <div className="title">
         <h1>
           {t("section-one.frontend")} <br /> <span>&</span>{" "}

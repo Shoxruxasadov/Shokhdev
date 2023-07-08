@@ -17,9 +17,10 @@ export default function SectionTwo() {
   const language = localStorage.getItem("lang");
 
   return (
-    <section className="section section-two">
+    <section id="about" className="section section-two">
       <div className="about">
         <img className="blur" src={blur} />
+        <img className="blur2" src={blur} />
         <p>{t("header.about")}</p>
         <h1>
           {t("section-two.hello")}{" "}
@@ -55,6 +56,7 @@ export default function SectionTwo() {
         <p className="skillname redux">Redux</p>
         <p className="skillname ts">TypeScript</p>
         <p className="skillname git">Git/GitHub</p>
+        
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
-import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Rodal from "rodal";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [lang, setLang] = useState(false);
@@ -34,46 +34,46 @@ export default function Header() {
           </div>
           <div className="list">
             <ul className="listUl">
-              <NavLink
-                to="*home"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 <div className="list">{t("header.home")}</div>
-              </NavLink>
-              <NavLink
-                to="*about"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 <div className="list">{t("header.about")}</div>
-              </NavLink>
-              <NavLink
-                to="*resume"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
-              >
-                <div className="list">{t("header.resume")}</div>
-              </NavLink>
-              <NavLink
-                to="*projects"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
+              </Link>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 <div className="list">{t("header.project")}</div>
-              </NavLink>
-              <NavLink
-                to="*contact"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }
+              </Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 <div className="list">{t("header.contact")}</div>
-              </NavLink>
+              </Link>
             </ul>
             <HiMenuAlt3 onClick={() => setRodal(true)} className="menu" />
             <div className="lang">
