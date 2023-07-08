@@ -713,7 +713,7 @@ main {
     .section-four {
       width: 100%;
       padding: 135px 10px 0;
-      margin-bottom: 500px;
+      margin-bottom: 400px;
 
       display: flex;
       flex-direction: column;
@@ -841,11 +841,10 @@ main {
 footer {
   width: 100%;
   background: #191927;
-  height: 400px;
+  height: 150px;
   border-radius: 3em 3em 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 5px 0px inset;
-  overflow: hidden;
 
   .container {
     max-width: 1360px;
@@ -856,10 +855,56 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0 10px;
+    position: relative;
+
+    .LetsWork {
+      position: absolute;
+      top: -150px;
+      right: 0;
+      color: #fff6ff;
+      text-align: right;
+      text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 61.346px;
+      letter-spacing: -1.5px;
+    }
 
     .footer-top {
       width: 100%;
       height: calc(100% - 70px);
+      display: flex;
+      align-items: center;
+
+      .contacts {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .contact {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          &.calllock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            gap: 30px;
+          }
+
+          svg {
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 17px;
+          }
+        }
+      }
     }
 
     .footer-bottom {
@@ -898,7 +943,7 @@ footer {
             color: #fff6ff;
             font-size: 17px;
             transition: 0.2s;
-            padding-top: .1em;
+            padding-top: 0.1em;
             font-weight: 400;
           }
         }
