@@ -5,6 +5,21 @@ import i18next from "i18next";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Rodal from "rodal";
 import { Link } from "react-scroll";
+import Profile from "../../images/profil.png";
+import { NavLink } from "react-router-dom";
+
+import {
+  BiLogoInstagramAlt,
+  BiLogoLinkedin,
+  BiLogoGithub,
+  BiSolidCloudDownload,
+  BiSolidHome,
+  BiSolidUser,
+  BiSolidBookmark,
+} from "react-icons/bi";
+import { IoMail } from "react-icons/io5";
+
+import Resume from "../../others/resume.pdf";
 
 export default function Header() {
   const [lang, setLang] = useState(false);
@@ -22,8 +37,95 @@ export default function Header() {
   return (
     <>
       <Rodal visible={rodal} onClose={() => setRodal(false)}>
-        <h3>Shoxrux Asadov</h3>
-        <hr />
+        <sidebar id="header">
+          <div class="d-flex flex-column">
+            <div class="profile">
+              <img src={Profile} class="img-fluid rounded-circle" />
+              <h1 class="text-light">
+                <NavLink to="/">Shoxrux Asadov</NavLink>
+              </h1>
+              <div class="social-links mt-3 text-center gap-3 d-flex justify-center">
+                <a
+                  href="https://www.instagram.com/Shokh.dev"
+                  className="social instagram"
+                  target="_blank"
+                >
+                  <BiLogoInstagramAlt />
+                </a>
+                <a
+                  href="https://github.com/ShoxruxAsadov"
+                  className="social github"
+                  target="_blank"
+                >
+                  <BiLogoGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/shoxruxasadov/"
+                  className="social linkedin"
+                  target="_blank"
+                >
+                  <BiLogoLinkedin />
+                </a>
+                <a className="social resume" href={Resume} download="resume">
+                  <BiSolidCloudDownload />
+                </a>
+              </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+              <ul>
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => setRodal(false)}
+                >
+                  <BiSolidHome />
+                  <div className="list">{t("header.home")}</div>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => setRodal(false)}
+                >
+                  <BiSolidUser />
+                  <div className="list">{t("header.about")}</div>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => setRodal(false)}
+                >
+                  <BiSolidBookmark />
+                  <div className="list">{t("header.project")}</div>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  onClick={() => setRodal(false)}
+                >
+                  <IoMail />
+                  <div className="list">{t("header.contact")}</div>
+                </Link>
+              </ul>
+            </nav>
+          </div>
+        </sidebar>
       </Rodal>
       <header>
         <div className="container">

@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { IoIosArrowForward } from "react-icons/io";
-import trigol from "../../images/SectionFour/trigol.svg";
-import linear from "../../images/SectionFour/linear.svg";
 import { PiArrowSquareInBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
+
+import Trigol from "../../images/SectionFour/trigol.svg";
+import Linear from "../../images/SectionFour/linear.svg";
 
 export default function SectionFour() {
   const [t, i18n] = useTranslation("global");
@@ -19,7 +20,7 @@ export default function SectionFour() {
             (language == "ru" && { left: "430px" }) ||
             (language == "uz" && { left: "480px" })
           }
-          src={trigol}
+          src={Trigol}
         />
       </h1>
       <p className="all-project">
@@ -27,7 +28,7 @@ export default function SectionFour() {
       </p>
       <div className="projects">
         <div className="project">
-          <img src={linear} />
+          <img src={Linear} />
           <h1>OmenGames</h1>
           <p>{t("section-four.omengamesTitle")}</p>
           <Link to={"https://www.omengames.uz/"}>
@@ -35,7 +36,7 @@ export default function SectionFour() {
           </Link>
         </div>
         <div className="project">
-          <img src={linear} />
+          <img src={Linear} />
           <h1>Lorenzon</h1>
           <p>{t("section-four.lorenzonTitle")}</p>
           <Link to={"https://www.lorenzon.uz/"}>
@@ -43,7 +44,7 @@ export default function SectionFour() {
           </Link>
         </div>
         <div className="project">
-          <img src={linear} />
+          <img src={Linear} />
           <h1>2048 Puzzle</h1>
           <p>{t("section-four.puzzleTitle")}</p>
           <Link to={"https://2048puzzlegames.netlify.app/"}>

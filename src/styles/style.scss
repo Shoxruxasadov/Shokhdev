@@ -31,32 +31,17 @@
   }
 
   .rodal-dialog {
-    width: 250px !important;
+    width: 300px !important;
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     background: #10101e;
-    border-radius: 0 1em 1em 0;
     position: relative;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     animation-duration: 250ms !important;
     box-shadow: 0 0 20px #00000050;
-
-    h3 {
-      padding-left: 20px;
-      line-height: 56px;
-      color: #7c6aa6;
-      cursor: default;
-
-      &::selection {
-        background: transparent;
-      }
-    }
-
-    hr {
-      border-color: #7c6aa6;
-    }
   }
 }
 
@@ -66,7 +51,7 @@ header {
   background: #10101ea6;
   backdrop-filter: blur(10px);
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
 
   .container {
     max-width: 1360px;
@@ -781,20 +766,19 @@ footer {
   max-width: 95%;
   background: #191927;
   margin: 0 auto;
-  height: 150px;
   border-radius: 3em 3em 0 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 5px 0px inset;
+
 
   .container {
     max-width: 1360px;
     height: 100%;
     margin: 0 auto;
-    padding: 10px 20px; 
 
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 10px 10px 0;
     position: relative;
 
     .LetsWork {
@@ -813,9 +797,9 @@ footer {
 
     .footer-top {
       width: 100%;
-      height: calc(100% - 70px);
       display: flex;
       align-items: center;
+      padding: 20px 0;
 
       .contacts {
         width: 100%;
@@ -847,44 +831,52 @@ footer {
       }
     }
 
+    hr{
+      border-color: #707186;
+    }
+
     .footer-bottom {
       width: 100%;
-      height: 70px;
-      border-top: 1px solid #707186;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 20px 0;
 
       .social {
         display: flex;
         align-items: center;
         gap: 30px;
 
-        a {
-          text-decoration: none;
+        div{
           display: flex;
-          align-items: center;
-          gap: 5px;
+          gap: 30px;
 
-          &:hover {
-            svg,
-            span {
-              color: #764abc;
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+  
+            &:hover {
+              svg,
+              span {
+                color: #764abc;
+              }
             }
-          }
-
-          svg {
-            font-size: 18px;
-            color: #fff6ff;
-            transition: 0.2s;
-          }
-
-          span {
-            color: #fff6ff;
-            font-size: 17px;
-            transition: 0.2s;
-            padding-top: 0.1em;
-            font-weight: 400;
+  
+            svg {
+              font-size: 18px;
+              color: #fff6ff;
+              transition: 0.2s;
+            }
+  
+            span {
+              color: #fff6ff;
+              font-size: 17px;
+              transition: 0.2s;
+              padding-top: 0.1em;
+              font-weight: 400;
+            }
           }
         }
       }
@@ -897,4 +889,156 @@ footer {
       }
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header {
+  width: 100%;
+  transition: all 0.5s;
+  padding: 0 15px;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color: #149ddd;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
 }

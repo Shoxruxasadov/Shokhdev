@@ -9,7 +9,7 @@ import {
 import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { IoMdMailUnread } from "react-icons/io";
 
-import Resume from "../../others/resume.pdf"
+import Resume from "../../others/resume.pdf";
 
 export default function Footer() {
   return (
@@ -36,36 +36,37 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <hr />
         <div className="footer-bottom">
           <div className="social">
-            <Link
-              to={"https://www.instagram.com/Shokh.dev"}
-              className="social instagram"
-              target="_blank"
-            >
-              <BiLogoInstagramAlt /> <span>Instagram</span>
-            </Link>
-            <Link
-              to={"https://github.com/ShoxruxAsadov"}
-              className="social github"
-              target="_blank"
-            >
-              <BiLogoGithub /> <span>GitHub</span>
-            </Link>
-            <Link
-              to={"https://www.linkedin.com/in/shoxruxasadov/"}
-              className="social linkedin"
-              target="_blank"
-            >
-              <BiLogoLinkedin /> <span>LinkedIn</span>
-            </Link>
-            <a
-              className="social resume"
-              href={Resume}
-              download="resume"
-            >
-              <BiSolidCloudDownload /> <span>Resume</span>
-            </a>
+            <div>
+              <Link
+                to={"https://www.instagram.com/Shokh.dev"}
+                className="social instagram"
+                target="_blank"
+              >
+                <BiLogoInstagramAlt /> <span>Instagram</span>
+              </Link>
+              <Link
+                to={"https://github.com/ShoxruxAsadov"}
+                className="social github"
+                target="_blank"
+              >
+                <BiLogoGithub /> <span>GitHub</span>
+              </Link>
+            </div>
+            <div>
+              <Link
+                to={"https://www.linkedin.com/in/shoxruxasadov/"}
+                className="social linkedin"
+                target="_blank"
+              >
+                <BiLogoLinkedin /> <span>LinkedIn</span>
+              </Link>
+              <a className="social resume" href={Resume} download="resume">
+                <BiSolidCloudDownload /> <span>Resume</span>
+              </a>
+            </div>
           </div>
           <div className="ooo">
             <p>Shoxrux Asadov © 2022-2023.</p>
