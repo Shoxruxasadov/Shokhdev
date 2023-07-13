@@ -37,14 +37,14 @@ export default function Header() {
   return (
     <>
       <Rodal visible={rodal} onClose={() => setRodal(false)}>
-        <sidebar id="header">
-          <div class="d-flex flex-column">
-            <div class="profile">
-              <img src={Profile} class="img-fluid rounded-circle" />
-              <h1 class="text-light">
+        <div id="header">
+          <div className="d-flex flex-column">
+            <div className="profile">
+              <img src={Profile} className="img-fluid rounded-circle" />
+              <h1 className="text-light">
                 <NavLink to="/">Shoxrux Asadov</NavLink>
               </h1>
-              <div class="social-links mt-3 text-center gap-3 d-flex justify-center">
+              <div className="social-links mt-3 text-center gap-3 d-flex justify-center">
                 <a
                   href="https://www.instagram.com/Shokh.dev"
                   className="social instagram"
@@ -72,7 +72,7 @@ export default function Header() {
               </div>
             </div>
 
-            <nav id="navbar" class="nav-menu navbar">
+            <nav id="navbar" className="nav-menu navbar">
               <ul>
                 <Link
                   activeClass="active"
@@ -125,7 +125,7 @@ export default function Header() {
               </ul>
             </nav>
           </div>
-        </sidebar>
+        </div>
       </Rodal>
       <header>
         <div className="container">
