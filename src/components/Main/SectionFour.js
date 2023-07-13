@@ -3,7 +3,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import { PiArrowSquareInBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
-import Trigol from "../../images/SectionFour/trigol.svg";
 import Linear from "../../images/SectionFour/linear.svg";
 
 export default function SectionFour() {

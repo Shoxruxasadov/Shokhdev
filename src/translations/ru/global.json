@@ -43,5 +43,9 @@
     "omengamesTitle": "Магазин Игр",
     "lorenzonTitle": "Музык Плаер",
     "puzzleTitle": "Игра"
+  },
+  "footer":{
+    "have": "Есть проект?",
+    "lets": "Давайте работать вместе!"
   }
 }

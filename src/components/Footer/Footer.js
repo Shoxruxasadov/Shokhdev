@@ -10,13 +10,17 @@ import { IoCall, IoLocationSharp } from "react-icons/io5";
 import { IoMdMailUnread } from "react-icons/io";
 
 import Resume from "../../others/resume.pdf";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const [t, i18n] = useTranslation("global");
+  const language = localStorage.getItem("lang");
+
   return (
     <footer id="contact">
       <div className="container">
         <h1 className="LetsWork">
-          Have a Project? <br /> Let's Work Together
+        {t("footer.have")} <br /> {t("footer.lets")}
         </h1>
         <div className="footer-top">
           <div className="contacts">

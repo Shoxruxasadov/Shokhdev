@@ -43,5 +43,9 @@
     "omengamesTitle": "Games Store",
     "lorenzonTitle": "Music Player",
     "puzzleTitle": "Game"
+  },
+  "footer":{
+    "have": "Have a project?",
+    "lets": "Let's work together!"
   }
 }

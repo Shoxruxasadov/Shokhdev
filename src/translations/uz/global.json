@@ -43,5 +43,9 @@
     "omengamesTitle": "O'yinlar Do'koni",
     "lorenzonTitle": "Musiqa Playeri",
     "puzzleTitle": "O'yin"
+  },
+  "footer":{
+    "have": "Loyihangiz bormi?",
+    "lets": "Birga ishlaylik!"
   }
 }
