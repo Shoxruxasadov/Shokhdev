@@ -105,6 +105,7 @@
 
     .section-one {
       padding-top: 175px !important;
+
       .title {
         h1 {
           font-size: 64px;
@@ -176,6 +177,20 @@
       }
       .projects {
         height: 420px !important;
+
+        .project {
+          h1 {
+            font-size: 28px;
+            bottom: 80px;
+          }
+          p {
+            font-size: 16px;
+            bottom: 60px;
+          }
+          svg {
+            font-size: 48px;
+          }
+        }
       }
     }
   }
@@ -285,6 +300,20 @@
       }
       .projects {
         height: 370px !important;
+
+        .project {
+          h1 {
+            font-size: 24px;
+            bottom: 70px;
+          }
+          p {
+            font-size: 14px;
+            bottom: 50px;
+          }
+          svg {
+            font-size: 42px;
+          }
+        }
       }
     }
   }
@@ -292,8 +321,9 @@
     max-width: 900px !important;
 
     .LetsWork {
-      top: -140px;
-      font-size: 34px;
+      top: -120px;
+      font-size: 32px;
+      line-height: 50px;
     }
   }
 }
@@ -394,6 +424,24 @@
       }
       .projects {
         height: 323px !important;
+
+        .project {
+          h1 {
+            font-size: 22px;
+            bottom: 60px;
+            left: 20px;
+          }
+          p {
+            font-size: 13px;
+            bottom: 40px;
+            left: 20px;
+          }
+          svg {
+            font-size: 38px;
+            bottom: 15px;
+            right: 15px;
+          }
+        }
       }
     }
   }
@@ -401,8 +449,9 @@
     max-width: 800px !important;
 
     .LetsWork {
-      top: -130px;
+      top: -110px;
       font-size: 30px;
+      line-height: 45px;
     }
   }
 }
@@ -466,6 +515,7 @@
     .section-two {
       flex-direction: column;
       gap: 100px;
+      padding: 170px 10px 100px;
 
       .about {
         width: 100%;
@@ -497,72 +547,122 @@
       }
     }
 
-    .section-three{
+    .section-three {
       flex-direction: column;
       gap: 40px;
 
-      .education{
-        width: 100%!important;
+      .education {
+        width: 100% !important;
 
-        p{
+        p {
+          font-size: 22px;
           text-align: center;
         }
 
-        .edu{
+        .edu {
           flex-direction: column;
           align-items: center;
-          height: auto!important;
+          height: auto !important;
 
-          img{
-            height: 80px;
+          img {
+            height: 140px;
           }
 
           .edu-title {
-            h1{
+            gap: 10px;
+
+            h1 {
               text-align: center;
-              font-size: 22px;
+              font-size: 28px;
             }
-            h2{
+            h2 {
+              text-align: center;
+              font-size: 24px;
+            }
+            h3 {
               text-align: center;
               font-size: 20px;
-            }
-            h3{
-              text-align: center;
-              font-size: 18px;
             }
           }
         }
       }
 
       .experience {
-        width: 100%!important;
+        width: 100% !important;
 
-        p{
+        p {
+          font-size: 22px;
           text-align: center;
         }
 
-        .exp{
+        .exp {
           flex-direction: column;
           align-items: center;
-          height: auto!important;
+          height: auto !important;
 
-          img{
-            height: 80px;
+          img {
+            height: 140px;
           }
 
           .exp-title {
-            h1{
+            gap: 10px;
+
+            h1 {
               text-align: center;
-              font-size: 22px;
+              font-size: 28px;
             }
-            h2{
+            h2 {
+              text-align: center;
+              font-size: 24px;
+            }
+            h3 {
               text-align: center;
               font-size: 20px;
             }
-            h3{
-              text-align: center;
-              font-size: 18px;
-            }
+          }
+        }
+      }
+    }
+
+    .section-four {
+      gap: 30px;
+
+      .portfolio {
+        font-size: 48px;
+      }
+
+      .all-project{
+        font-size: 22px;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+
+        .project {
+          width: 95% !important;
+          height: 900px !important;
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: none;
+          }
+
+          h1 {
+            font-size: 48px;
+            bottom: 100px;
+            left: 30px;
+          }
+          p {
+            font-size: 32px;
+            bottom: 70px;
+            left: 30px;
+          }
+          svg {
+            font-size: 64px;
+            bottom: 20px;
+            right: 20px;
           }
         }
       }
