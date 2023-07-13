@@ -14,14 +14,7 @@ export default function SectionFour() {
     <section id="portfolio" className="section section-four">
       <h1 className="portfolio">
         {t("section-four.portfolio")} <span>&</span> {t("section-four.project")}{" "}
-        <img
-          style={
-            (language == "en" && { left: "455px" }) ||
-            (language == "ru" && { left: "430px" }) ||
-            (language == "uz" && { left: "480px" })
-          }
-          src={Trigol}
-        />
+        <img src={Trigol} />
       </h1>
       <p className="all-project">
         <span>{t("section-four.seeall")}</span> <IoIosArrowForward />
