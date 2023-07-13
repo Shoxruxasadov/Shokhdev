@@ -625,14 +625,14 @@
     }
 
     .section-four {
-      gap: 30px;
+      gap: 40px;
 
       .portfolio {
-        font-size: 48px;
+        font-size: 58px;
       }
 
-      .all-project{
-        font-size: 22px;
+      .all-project {
+        font-size: 28px;
       }
 
       .projects {
@@ -650,19 +650,19 @@
           }
 
           h1 {
-            font-size: 48px;
-            bottom: 100px;
-            left: 30px;
+            font-size: 54px;
+            bottom: 120px;
+            left: 40px;
           }
           p {
-            font-size: 32px;
-            bottom: 70px;
-            left: 30px;
+            font-size: 42px;
+            bottom: 75px;
+            left: 40px;
           }
           svg {
-            font-size: 64px;
-            bottom: 20px;
-            right: 20px;
+            font-size: 72px;
+            bottom: 30px;
+            right: 30px;
           }
         }
       }
@@ -673,11 +673,30 @@
     max-width: 700px !important;
     gap: 20px;
 
+    .LetsWork {
+      top: -120px;
+      font-size: 42px;
+      line-height: 52px;
+    }
+
     .footer-top {
       padding: 20px 0 10px;
+
       .contacts {
         flex-direction: column;
         gap: 20px;
+
+        .contact {
+          &.calllock {
+            width: auto !important;
+          }
+          svg {
+            font-size: 27px;
+          }
+          span {
+            font-size: 26px;
+          }
+        }
       }
     }
 
@@ -685,6 +704,23 @@
       flex-direction: column;
       gap: 20px;
       padding: 10px 0 20px;
+
+      .social {
+        div {
+          a {
+            svg {
+              font-size: 27px !important;
+            }
+            span {
+              font-size: 26px !important;
+            }
+          }
+        }
+      }
+
+      .ooo p {
+        font-size: 28px;
+      }
     }
   }
 }
