@@ -47,5 +47,9 @@
   "footer":{
     "have": "Loyihangiz bormi?",
     "lets": "Birga ishlaylik!"
+  },
+  "error": {
+    "title": "Kechirasiz, siz tashrif buyurgan sahifa mavjud emas.",
+    "button": "Asosiy Sahifaga"
   }
 }

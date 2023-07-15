@@ -47,5 +47,9 @@
   "footer":{
     "have": "Have a project?",
     "lets": "Let's work together!"
+  },
+  "error": {
+    "title": "Sorry, the page you visited does not exist.",
+    "button": "Back Home"
   }
 }

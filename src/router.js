@@ -9,4 +9,12 @@ export const router = createBrowserRouter([
     element: <Home />,
     errorElement: <Error />,
   },
+  {
+    path: "/project",
+    element: <Home />,
+  },
+  {
+    path: "/skills",
+    element: <Home />,
+  }
 ]);
