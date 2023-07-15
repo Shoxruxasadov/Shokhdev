@@ -13,9 +13,11 @@ import global_en from "./translations/en/global.json";
 import global_ru from "./translations/ru/global.json";
 import global_uz from "./translations/uz/global.json";
 
+const lang = localStorage.getItem("lang");
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "en",
+  lng: lang === null ? "en" : lang,
   resources: {
     en: {
       global: global_en,
