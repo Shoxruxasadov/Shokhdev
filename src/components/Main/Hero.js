@@ -4,12 +4,18 @@ import Ellipse2 from "../../images/SectionOne/Ellipse2.png";
 import Ellipse3 from "../../images/SectionOne/Ellipse3.png";
 import Shokhdev from "../../images/SectionOne/Shokhdev.webp";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
-export default function SectionOne() {
+export default function Hero() {
   const [t, i18n] = useTranslation("global");
   return (
     <section id="home" className="section section-one">
-      <div className="title">
+      <motion.div
+        initial={{ y: "2rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, type: "spring" }}
+        className="title"
+      >
         <h1>
           {t("section-one.frontend")} <br /> <span>&</span>{" "}
           {t("section-one.developer")} <br />
@@ -34,15 +40,20 @@ export default function SectionOne() {
           </div>
           <p>{t("section-one.available")}</p>
         </div>
-      </div>
-      <div className="image">
+      </motion.div>
+      <motion.div
+        initial={{ x: "7rem", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2, type: "spring" }}
+        className="image"
+      >
         <img src={Shokhdev} />
         <div className="top">
           <div className="rectangle1"></div>
           <div className="rectangle2"></div>
         </div>
         <div className="rectangle3"></div>
-      </div>
+      </motion.div>
     </section>
   );
 }

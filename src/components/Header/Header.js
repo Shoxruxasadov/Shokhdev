@@ -34,6 +34,10 @@ export default function Header() {
     handleChangeLanguage(language);
   }, [lang]);
 
+  useEffect(() => {
+    handleChangeLanguage(language);
+  }, []);
+
   return (
     <>
       <Rodal visible={rodal} onClose={() => setRodal(false)}>
