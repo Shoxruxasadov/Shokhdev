@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="contact location">
                 <IoLocationSharp />
-                <span>Tashkent, Uzbekistan</span>
+                <span>Bukhara, Uzbekistan</span>
               </div>
             </div>
             <div className="contact mail">
@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="ooo">
-            <p>Shoxrux Asadov © 2022-2023.</p>
+            <p>Shoxrux Asadov © 2023.</p>
           </div>
         </div>
       </div>
