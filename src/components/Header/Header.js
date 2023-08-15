@@ -194,7 +194,7 @@ export default function Header() {
                   }
                 />
               </div>
-              <ul style={lang ? { opacity: 1 } : { opacity: 0 }}>
+              <ul className={lang ? "active" : ''}>
                 <li
                   onClick={() => {
                     localStorage.setItem("lang", "en");

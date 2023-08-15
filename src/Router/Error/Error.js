@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header/Header";
+import { useNavigate } from "react-router-dom";
 
 export default function Error() {
   const [t, i18n] = useTranslation("global");
+  const navigate = useNavigate()
+
   return (
     <>
       <Header />
@@ -300,7 +303,7 @@ export default function Error() {
             <div class="title">404</div>
             <div class="subtitle">{t("error.title")}</div>
             <div class="extra">
-              <button class="back">
+              <button onClick={()=>navigate("/")} class="back">
                 <span>{t("error.button")}</span>
               </button>
             </div>

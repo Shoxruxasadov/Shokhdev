@@ -170,7 +170,7 @@
 header {
   width: 100%;
   height: 80px;
-  background: #10101EA6;
+  background: #10101ea6;
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 10;
@@ -288,23 +288,39 @@ header {
         }
 
         ul {
-          opacity: 0;
           transition: 0.2s;
           position: absolute;
-          bottom: -120px;
+          top: 40px;
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          align-items: center;
+          justify-content: space-between;
           background: #7c6aa6;
-          padding: 10px;
           width: 100%;
+          height: 0px;
           border-radius: 1em 0 1em 0;
           color: #10101e;
           font-weight: 700;
-          align-items: center;
+          visibility: hidden;
+          overflow: hidden;
+          gap: 0;
 
           li {
             cursor: pointer;
+            &:nth-child(1) {
+              padding-top: 10px;
+            }
+            &:nth-child(2) {
+              padding: 0 5px;
+            }
+            &:nth-child(3) {
+              padding-bottom: 10px;
+            }
+          }
+
+          &.active {
+            height: 112px;
+            visibility: visible;
           }
         }
       }
@@ -810,14 +826,13 @@ main {
 
       .projects {
         width: 100%;
-        height: 600px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         gap: 40px;
 
         .project {
-          width: 33.33%;
-          height: 100%;
+          width: 100%;
+          height: 444px;
           border-radius: 0.5em;
           background-size: cover;
           position: relative;
@@ -826,16 +841,8 @@ main {
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
             rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
             rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-          &:nth-child(1) {
-            background-image: url(../images//SectionFour/omengames.png);
-          }
-          &:nth-child(2) {
-            background-image: url(../images//SectionFour/lorenzon.png);
-          }
-          &:nth-child(3) {
-            background-image: url(../images//SectionFour/puzzle.png);
-          }
+          background: #151525;
+          padding: 20px;
 
           img {
             width: 100%;
