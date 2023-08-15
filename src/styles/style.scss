@@ -821,7 +821,7 @@ main {
         align-items: center;
         justify-content: end;
         cursor: pointer;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
       }
 
       .projects {
@@ -831,59 +831,97 @@ main {
         gap: 40px;
 
         .project {
+          gap: 20px;
           width: 100%;
-          height: 444px;
-          border-radius: 0.5em;
-          background-size: cover;
-          position: relative;
+          height: 460px;
+          padding: 20px;
+          display: flex;
           overflow: hidden;
-          border: 1px solid #212133;
+          position: relative;
+          border-radius: 0.5em;
+          background: #151525;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
             rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
             rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-          background: #151525;
-          padding: 20px;
+
+          &:nth-child(even) {
+            flex-direction: row-reverse;
+          }
 
           img {
+            height: 100%;
+            border-radius: 0.5em;
+            border: 1px solid #232335;
+          }
+
+          .content {
             width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-          }
+            padding: 5px;
 
-          h1 {
-            color: #fff;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 500;
-            letter-spacing: -0.875px;
-            position: absolute;
-            bottom: 100px;
-            left: 30px;
-          }
-
-          p {
-            color: #b3b4c0;
-            font-size: 18px;
-            position: absolute;
-            bottom: 80px;
-            left: 32px;
-          }
-
-          a {
-            color: #fff6ff;
-          }
-
-          svg {
-            font-size: 56px;
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            cursor: pointer;
-            transition: 0.2s;
-
-            &:hover {
+            p {
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              font-weight: 700;
               color: #7c6aa6;
+              margin-bottom: 20px;
+            }
+
+            h1 {
+              font-size: 30px;
+              margin: 10px 0 44px;
+              position: relative;
+              letter-spacing: 1px;
+
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: -13px;
+                width: 120px;
+                height: 4px;
+                background: #7c6aa6;
+                border-radius: 0 2em 2em 0;
+              }
+            }
+
+            .prolang {
+              display: flex;
+              align-items: center;
+              margin-bottom: 30px;
+              gap: 16px;
+
+              svg {
+                font-size: 24px;
+
+                color: #746890;
+              }
+            }
+
+            h3 {
+              font-size: 16px;
+              font-weight: 500;
+            }
+
+            a {
+              padding: 8px 20px;
+              border-radius: 0.4em;
+              text-decoration: none;
+              background: #322d41;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 4px;
+              max-width: 100px;
+              color: #ece4ec;
+              margin-top: 35px;
+              transition: 0.2s;
+
+              &:hover,
+              &:focus {
+                margin-top: 32px;
+                background: #514963;
+              }
             }
           }
         }

@@ -5,8 +5,8 @@
   main .container {
     max-width: 1300px !important;
 
-    .section-four .projects {
-      height: 570px !important;
+    .section-four .projects .project {
+      height: 425px !important;
     }
   }
   footer .container {
@@ -25,8 +25,8 @@
       .portfolio {
         font-size: 48px;
       }
-      .projects {
-        height: 520px !important;
+      .projects .project {
+        height: 400px !important;
       }
     }
   }
@@ -82,8 +82,8 @@
       .all-project {
         font-size: 20px;
       }
-      .projects {
-        height: 470px !important;
+      .projects .project {
+        height: 360px !important;
       }
     }
   }
@@ -175,20 +175,27 @@
       .all-project {
         font-size: 20px;
       }
-      .projects {
-        height: 420px !important;
 
-        .project {
-          h1 {
-            font-size: 28px;
-            bottom: 80px;
-          }
+      .projects .project {
+        height: 325px !important;
+
+        .content {
           p {
-            font-size: 16px;
-            bottom: 60px;
+            margin-bottom: 15px;
           }
-          svg {
-            font-size: 48px;
+          h1 {
+            margin: 7px 0 40px;
+          }
+          .prolang {
+            margin-bottom: 25px;
+          }
+          a {
+            margin-top: 30px;
+
+            &:hover,
+            &:focus {
+              margin-top: 27px;
+            }
           }
         }
       }
@@ -298,20 +305,35 @@
       .all-project {
         font-size: 20px;
       }
-      .projects {
-        height: 370px !important;
 
-        .project {
-          h1 {
-            font-size: 24px;
-            bottom: 70px;
-          }
+      .projects .project {
+        height: 300px !important;
+
+        .content {
           p {
-            font-size: 14px;
-            bottom: 50px;
+            margin-bottom: 10px;
+            font-size: 12px;
           }
-          svg {
-            font-size: 42px;
+          h1 {
+            margin: 5px 0 36px;
+            font-size: 28px;
+          }
+          .prolang {
+            margin-bottom: 20px;
+          }
+          h3{
+            font-size: 14px;
+          }
+          a {
+            margin-top: 25px;
+            padding: 7px 18px;
+            max-width: 90px;
+            font-size: 14px;
+
+            &:hover,
+            &:focus {
+              margin-top: 22px;
+            }
           }
         }
       }
@@ -422,24 +444,41 @@
       .all-project {
         font-size: 18px;
       }
-      .projects {
-        height: 323px !important;
+      .projects .project {
+        height: 260px !important;
 
-        .project {
-          h1 {
-            font-size: 22px;
-            bottom: 60px;
-            left: 20px;
-          }
+        .content {
           p {
-            font-size: 13px;
-            bottom: 40px;
-            left: 20px;
+            margin-bottom: 5px;
+            font-size: 12px;
           }
-          svg {
-            font-size: 38px;
-            bottom: 15px;
-            right: 15px;
+          h1 {
+            margin: 4px 0 25px;
+            font-size: 28px;
+
+            &::before {
+              bottom: -9px;
+            }
+          }
+          .prolang {
+            margin-bottom: 15px;
+            svg{
+              font-size: 22px!important;
+            }
+          }
+          h3{
+            font-size: 14px;
+          }
+          a {
+            margin-top: 20px;
+            padding: 7px 18px;
+            max-width: 90px;
+            font-size: 14px;
+
+            &:hover,
+            &:focus {
+              margin-top: 18px;
+            }
           }
         }
       }
@@ -635,34 +674,48 @@
         font-size: 28px;
       }
 
-      .projects {
-        flex-direction: column;
-        align-items: center;
+      .projects .project {
         height: auto !important;
+        flex-direction: column !important;
 
-        .project {
-          width: 95% !important;
-          height: 900px !important;
+        img{
+          height: auto;
+          width: 100%;
+        }
 
-          &:nth-child(2),
-          &:nth-child(3) {
-            display: none;
-          }
-
-          h1 {
-            font-size: 54px;
-            bottom: 120px;
-            left: 40px;
-          }
+        .content {
+          padding: 5px 10px 10px;
           p {
-            font-size: 42px;
-            bottom: 75px;
-            left: 40px;
+            margin-bottom: 14px;
+            font-size: 14px;
           }
-          svg {
-            font-size: 72px;
-            bottom: 30px;
-            right: 30px;
+          h1 {
+            margin: 10px 0 40px;
+            font-size: 30px;
+
+            &::before {
+              bottom: -13px;
+            }
+          }
+          .prolang {
+            margin-bottom: 25px;
+            svg{
+              font-size: 24px!important;
+            }
+          }
+          h3{
+            font-size: 16px;
+          }
+          a {
+            margin-top: 30px;
+            padding: 10px 20px;
+            max-width: 100px;
+            font-size: 16px;
+
+            &:hover,
+            &:focus {
+              margin-top: 27px;
+            }
           }
         }
       }
@@ -835,31 +888,7 @@
         font-size: 26px;
       }
 
-      .projects .project {
-        width: 95% !important;
-        height: 835px !important;
 
-        &:nth-child(2),
-        &:nth-child(3) {
-          display: none;
-        }
-
-        h1 {
-          font-size: 48px;
-          bottom: 150px;
-          left: 40px;
-        }
-        p {
-          font-size: 32px;
-          bottom: 110px;
-          left: 40px;
-        }
-        svg {
-          font-size: 64px;
-          bottom: 30px;
-          right: 30px;
-        }
-      }
     }
   }
 
@@ -1027,26 +1056,6 @@
 
       .all-project {
         font-size: 24px;
-      }
-
-      .projects .project {
-        height: 765px !important;
-
-        h1 {
-          font-size: 42px;
-          bottom: 150px;
-          left: 40px;
-        }
-        p {
-          font-size: 28px;
-          bottom: 110px;
-          left: 40px;
-        }
-        svg {
-          font-size: 58px;
-          bottom: 30px;
-          right: 30px;
-        }
       }
     }
   }
@@ -1218,25 +1227,6 @@
         font-size: 22px;
       }
 
-      .projects .project {
-        height: 635px !important;
-
-        h1 {
-          font-size: 36px;
-          bottom: 150px;
-          left: 40px;
-        }
-        p {
-          font-size: 24px;
-          bottom: 110px;
-          left: 40px;
-        }
-        svg {
-          font-size: 48px;
-          bottom: 30px;
-          right: 30px;
-        }
-      }
     }
   }
 
@@ -1330,6 +1320,8 @@
 
     .section-one {
       gap: 40px;
+      height: calc(100svh - 70px);
+      justify-content: center;
 
       .title {
         h1 {
@@ -1441,25 +1433,6 @@
         font-size: 18px;
       }
 
-      .projects .project {
-        height: 500px !important;
-
-        h1 {
-          font-size: 32px;
-          bottom: 100px;
-          left: 30px;
-        }
-        p {
-          font-size: 20px;
-          bottom: 75px;
-          left: 30px;
-        }
-        svg {
-          font-size: 42px;
-          bottom: 20px;
-          right: 20px;
-        }
-      }
     }
   }
 
@@ -1542,7 +1515,7 @@
     max-width: 350px !important;
 
     .section-one {
-      padding-top: 125px!important;
+      padding-top: 125px !important;
       gap: 30px;
 
       .title {
@@ -1651,7 +1624,7 @@
 
     .section-four {
       padding: 120px 10px 0;
-      margin-bottom: 270px!important;
+      margin-bottom: 220px !important;
       gap: 10px;
 
       .portfolio {
@@ -1663,23 +1636,7 @@
       }
 
       .projects .project {
-        height: 433px !important;
-
-        h1 {
-          font-size: 32px;
-          bottom: 80px;
-          left: 25px;
-        }
-        p {
-          font-size: 18px;
-          bottom: 60px;
-          left: 25px;
-        }
-        svg {
-          font-size: 42px;
-          bottom: 20px;
-          right: 20px;
-        }
+        padding: 15px;
       }
     }
   }
