@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="contact location">
                 <IoLocationSharp />
-                <span>Bukhara, Uzbekistan</span>
+                <span>Tashkent, Uzbekistan</span>
               </div>
             </div>
             <div className="contact mail">
