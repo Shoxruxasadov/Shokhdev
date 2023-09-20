@@ -10,7 +10,7 @@ I am ready to contribute to innovative projects and deliver exceptional user exp
 *   🌍  I'm based in Bukhara, Uzbekistan
 *   🖥️  See my portfolio at [Shoxrux Asadov](http://shoxruxasadov.uz)
 *   ✉️  You can contact me at [shoxruxasadov05@mail.ru](mailto:shoxruxasadov05@mail.ru)
-*   🧠  I'm learning Backend | JAVA, PostgreSQL
+*   🧠  I'm learning Backend | PostgreSQL
 
 &#32;&#32;<a href="https://www.github.com/ShoxruxAsadov" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/ShoxruxAsadov?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
                   
