@@ -7,17 +7,16 @@ import "./styles/style.scss";
 import "./styles/media.scss";
 import "./styles/style.css";
 
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
-import global_en from "./translations/en/global.json";
-import global_ru from "./translations/ru/global.json";
-import global_uz from "./translations/uz/global.json";
-
-const lang = localStorage.getItem("lang");
+  import { I18nextProvider } from "react-i18next";
+  import i18next from "i18next";
+  import global_en from "./translations/en/global.json";
+  import global_ru from "./translations/ru/global.json";
+  import global_uz from "./translations/uz/global.json";
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: lang === null ? "en" : lang,
+  lng:
+    localStorage.getItem("lang") === null ? "en" : localStorage.getItem("lang"),
   resources: {
     en: {
       global: global_en,

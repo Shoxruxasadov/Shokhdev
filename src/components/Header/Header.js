@@ -79,7 +79,7 @@ export default function Header() {
                   to="home"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={0}
                   duration={500}
                   onClick={() => setRodal(false)}
                 >
@@ -91,7 +91,7 @@ export default function Header() {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={0}
                   duration={500}
                   onClick={() => setRodal(false)}
                 >
@@ -103,7 +103,7 @@ export default function Header() {
                   to="portfolio"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={0}
                   duration={500}
                   onClick={() => setRodal(false)}
                 >
@@ -115,7 +115,7 @@ export default function Header() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={0}
                   duration={500}
                   onClick={() => setRodal(false)}
                 >
@@ -141,7 +141,7 @@ export default function Header() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 <div className="list">{t("header.home")}</div>
@@ -151,7 +151,7 @@ export default function Header() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 <div className="list">{t("header.about")}</div>
@@ -161,7 +161,7 @@ export default function Header() {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 <div className="list">{t("header.project")}</div>
@@ -171,7 +171,7 @@ export default function Header() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 <div className="list">{t("header.contact")}</div>
